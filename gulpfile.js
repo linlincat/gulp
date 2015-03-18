@@ -63,7 +63,9 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('dist/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write()
+    //添加'map'就可以做控制台看scss具体地址
+    //.pipe(sourcemaps.write('map'))
     .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'style task complete'}));
 });
