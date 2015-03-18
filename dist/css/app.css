@@ -1,0 +1,67 @@
+/*
+Error: Invalid GBK character "\xE6"
+        on line 1 of styles/_two.scss
+        from line 3 of styles/app.scss
+
+1: //我是双斜杠表示的单行注释
+2: //设置body内距
+3: body{
+4:   padding:5px; //5px
+5: }
+
+Backtrace:
+styles/_two.scss:1
+styles/app.scss:3
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:1320:in `block in find_encoding_error'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:1319:in `each'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:1319:in `each_with_index'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:1319:in `find_encoding_error'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:902:in `rescue in check_sass_encoding'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/util.rb:898:in `check_sass_encoding'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:423:in `check_encoding!'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:379:in `_to_tree'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:299:in `to_tree'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:88:in `block in with_import'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:88:in `with_import'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
+D:/work-tools/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/bin/sass:13:in `<top (required)>'
+D:/work-tools/Ruby193/bin/sass:23:in `load'
+D:/work-tools/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE6\"\A         on line 1 of styles/_two.scss\A         from line 3 of styles/app.scss\A \A 1: //我是双斜杠表示的单行注释\A 2: //设置body内距\A 3: body{\A 4:   padding:5px; //5px\A 5: }"; }

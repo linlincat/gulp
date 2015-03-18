@@ -1,0 +1,13 @@
+.error {
+	border: 1px #fff;
+	background-color: #fdd;
+}
+
+.error.intrusion {
+	font-size: 12px;
+}
+
+.seriousError {
+	@extend .error;
+	border-width: 3px;
+}

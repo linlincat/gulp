@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Invalid GBK character \"\xE6\"\A         on line 1 of styles/_two.scss\A         from line 3 of styles/app.scss\A \A 1: //我是双斜杠表示的单行注释\A 2: //设置body内距\A 3: body{\A 4:   padding:5px; //5px\A 5: }"}

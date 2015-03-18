@@ -1,0 +1,6 @@
+header {
+  width: 500px;
+  height: 500px;
+  background: red;
+  border: 1px solid red;
+  border-shadow: 1px 1px yellow; }

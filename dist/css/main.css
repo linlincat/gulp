@@ -1,0 +1,11 @@
+.error, .seriousError {
+  border: 1px #fff;
+  background-color: #fdd; }
+
+.error.intrusion, .intrusion.seriousError {
+  font-size: 12px; }
+
+.seriousError {
+  border-width: 3px; }
+
+
